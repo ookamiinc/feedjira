@@ -30,6 +30,7 @@ module Feedjira
         element :guid, as: :entry_id, class: Feedjira::Parser::GloballyUniqueIdentifier
         element :"dc:identifier", as: :dc_identifier
 
+        element :image
         element :"media:thumbnail", as: :image, value: :url
         element :"media:content", as: :image, value: :url
         element :enclosure, as: :image, value: :url

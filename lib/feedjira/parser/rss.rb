@@ -9,6 +9,8 @@ module Feedjira
       element :title
       element :description
       element :link, :as => :url
+      element :pubDate, :as => :updated
+      element :lastBuildDate, :as => :updated
       elements :item, :as => :entries, :class => RSSEntry
 
       attr_accessor :feed_url

@@ -12,6 +12,7 @@ module Feedjira
       element :link, as: :feed_url, value: :href, with: { rel: 'self' }
       elements :link, as: :links, value: :href
       elements :link, as: :hubs, value: :href, with: { rel: 'hub' }
+      element :updated
       elements :entry, as: :entries, class: AtomEntry
 
       def self.able_to_parse?(xml)

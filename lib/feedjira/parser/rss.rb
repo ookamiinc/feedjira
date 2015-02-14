@@ -15,6 +15,8 @@ module Feedjira
       element :title
       element :ttl
       elements :"atom:link", as: :hubs, value: :href, with: { rel: 'hub' }
+      element :pubDate, as: :updated
+      element :lastBuildDate, as: :updated
       elements :item, as: :entries, class: RSSEntry
 
       attr_accessor :feed_url

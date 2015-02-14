@@ -8,8 +8,9 @@ module Feedjira
       element :description
       element :image, class: RSSImage
       element :language
-      element :lastBuildDate, as: :last_built
+      element :lastBuildDate, as: :updated
       element :link, as: :url
+      element :pubDate, as: :updated
       element :"a10:link", as: :url, value: :href
       element :rss, as: :version, value: :version
       element :title

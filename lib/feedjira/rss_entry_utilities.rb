@@ -36,6 +36,8 @@ module Feedjira
         element :enclosure, as: :image, value: :url
 
         elements :category, as: :categories
+
+        element :"media:status", as: :status
       end
     end
 

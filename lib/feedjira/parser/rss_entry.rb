@@ -32,6 +32,8 @@ module Feedjira
 
       element :guid, :as => :entry_id
       element :"dc:identifier", :as => :entry_id
+
+      element :"media:status", :as => :status
     end
 
   end
